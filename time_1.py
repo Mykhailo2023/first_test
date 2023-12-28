@@ -9,3 +9,6 @@ print(hours, "годин")
 print(minutes, "хвилин")
 print(seconds, "Секунд")
 print("👌")
+
+tm = datetime.datetime.now()
+print(tm)
