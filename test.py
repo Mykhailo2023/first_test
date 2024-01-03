@@ -1,3 +1,19 @@
+
+# Приклад речення
+sentence = "List comprehension in Python is fun and powerful! power shell"
+
+# Голосні, на які слід звернути увагу
+vowels = 'aeiou'
+
+# Використовуємо генератор списків з умовою 
+capitalized_vowels = [char.upper() for char in sentence if char.lower() in vowels]
+
+# Виведи список з голосними
+print(capitalized_vowels)
+
+
+
+
 # Initial data
 countries = [["USA", 9629091, 331002651], ["Canada", 9984670, 37742154],
             ["Germany", 357114, 83783942], ["Brazil", 8515767, 212559417],
