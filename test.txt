@@ -1,2 +1,0 @@
-'Learning Git is cool!' 
-"Never give up" 
