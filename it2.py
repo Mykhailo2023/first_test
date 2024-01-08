@@ -1,3 +1,8 @@
+letters = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+new_tuple = (letters[1], letters[2],letters[5], letters[7])
+print(new_tuple)
+
+
 cat = {}
 info = {"status": "vaccinated", "breed": True}
 cat ["nick"] = "Simon"
