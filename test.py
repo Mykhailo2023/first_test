@@ -1,3 +1,17 @@
+month = int(input("Vvedit chuslo: "))
+# Creating the first if statement
+if 3<= month <6:
+    print('It is spring.')
+# Creating the second if statement
+if 6<= month <9:
+    print('It is summer.')
+# Creating the third if statement
+if 9 <= month < 12:
+    print('It is autumn.')
+#Creating the fourth if statement
+if  month == 1 or month == 2 or month == 12:
+    print('It is winter.')
+
 
 # Приклад речення
 sentence = "List comprehension in Python is fun and powerful! power shell"
@@ -164,4 +178,4 @@ print(countries_dict["Canada"])
 
 # Add new data using list method
 #US_Info.extend(US_Info_new)
-#print(US_Info)}##
+#print(US_Info)}##'''
