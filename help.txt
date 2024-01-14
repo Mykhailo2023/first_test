@@ -1,0 +1,12 @@
+Давайте подивимося на таблицю нижче, щоб зрозуміти логіку кожного оператора:
+
+X	      Y	    X or Y	  X and       Y	not X
+True	True	True	  True	     False
+True	False	True	  False	     False
+False	True	True	  False	     True
+False	False	False	  False	     True
+
+Вираз	Синтакс	Ціль використання
+and	X and Y	Повертає True тільки коли X та Y обидваTrue
+or	X or Y	Повертає True завжди окрім ситуації коли X та Y обидва False
+not	not X	Якщо X має значення True,то змінює його на False, і навпаки
