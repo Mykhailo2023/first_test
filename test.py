@@ -108,6 +108,59 @@ countries_dict = {'USA': (9629091, 331002651), 'Canada': (9984670, 37742154),
 print(countries_dict["Canada"])
 
 
+def id_generator():
+    count = 1
+    while True:
+        yield f"ID_{count}"
+        count += 1
+
+# Використання генератора для отримання унікальних ID
+id_gen = id_generator()
+
+# Отримання перших п'яти ідентифікаторів
+for i in range(5):
+    unique_id = next(id_gen)
+    print(unique_id)
+
+    def cat_name_generator():
+    cat_names = ["Whiskers", "Fluffy", "Mittens", "Shadow", "Oliver"]
+    for name in cat_names:
+        yield name
+
+# Крок 2: Створення екземпляра генератора
+cat_name_gen = cat_name_generator()
+
+# Крок 3: виклик next() для отримання імені
+first_cat_name = next(cat_name_gen)
+print(first_cat_name)
+
+## Крок 4: виклик next() для отримання другого імені
+second_cat_name = next(cat_name_gen)
+print(second_cat_name)
+
+
+def traffic_light_generator():
+    while True:
+        yield "Red"
+        yield "Yellow"
+        yield "Green"
+
+# Використання генератора для імітації роботи світлофора
+traffic_light = traffic_light_generator()
+
+# Друк станів світлофора за кілька циклів
+for _ in range(9):
+    print(next(traffic_light))
+
+
+
+def sum_of_digits(n):
+    if n < 10:
+        return n
+    else:
+        return n % 10 + sum_of_digits(n // 10)
+      
+print(sum_of_digits(123456))
 
 # Create tuple
 #people = (('Alex', 23, 178), ('Noah', 34, 189), ('Peter', 29, 175),
