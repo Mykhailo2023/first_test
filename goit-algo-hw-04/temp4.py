@@ -1,0 +1,1 @@
+PS C:\Users\mproniv\Documents\GitHub\anekdot> python -m venv .venv
